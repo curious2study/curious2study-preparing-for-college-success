@@ -13,212 +13,398 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            color: #333;
-            background-color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
 
-        /* Header */
         header {
-            background-color: #f8fafc;
-            padding: 20px 0;
-            border-bottom: 2px solid #e2e8f0;
-        }
-
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo-section {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo-section img {
-            width: 50px;
-            height: 50px;
-        }
-
-        .site-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: #1e3a8a;
-            text-decoration: none;
-        }
-
-        .back-link {
-            color: #1e3a8a;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .back-link:hover {
-            color: #60a5fa;
-        }
-
-        /* Under Construction Section */
-        .construction {
-            padding: 100px 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
-            min-height: 70vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .construction-content {
-            max-width: 600px;
-        }
-
-        .construction-icon {
-            font-size: 80px;
-            margin-bottom: 30px;
-        }
-
-        .construction h1 {
-            font-size: 42px;
-            color: #1e3a8a;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .construction p {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 15px;
-            line-height: 1.8;
-        }
-
-        .coming-soon {
-            background-color: #3b82f6;
+            background: linear-gradient(135deg, #003366 0%, #004d80 100%);
             color: white;
-            padding: 15px 30px;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 30px;
-            font-weight: 600;
-        }
-
-        .course-preview {
-            margin-top: 60px;
-            background: white;
-            padding: 40px;
+            text-align: center;
+            padding: 40px 20px;
             border-radius: 8px;
+            margin-bottom: 30px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .course-preview h2 {
-            font-size: 28px;
-            color: #1e3a8a;
-            margin-bottom: 20px;
+        header img {
+            height: 60px;
+            margin-bottom: 15px;
         }
 
-        .preview-text {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.8;
-            margin-bottom: 20px;
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 8px;
+            font-weight: 700;
         }
 
-        /* Footer */
-        footer {
-            background-color: #1e3a8a;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            margin-top: 60px;
+        .course-info {
+            color: #b3d9ff;
+            font-size: 0.95em;
         }
 
-        .footer-content {
-            max-width: 1200px;
+        .container {
+            max-width: 1000px;
             margin: 0 auto;
         }
 
-        .footer-content p {
-            margin-bottom: 10px;
-        }
-
-        .footer-links {
-            margin-top: 20px;
-        }
-
-        .footer-links a {
-            color: #60a5fa;
+        .back-link {
+            color: #003366;
             text-decoration: none;
-            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: inline-block;
+            margin-bottom: 20px;
         }
 
-        .footer-links a:hover {
+        .back-link:hover {
+            color: #004d80;
             text-decoration: underline;
         }
 
-        /* Responsive */
+        .resources-section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .resources-section h2 {
+            color: #003366;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+
+        .resources-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .resource-link {
+            display: inline-block;
+            background: #003366;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .resource-link:hover {
+            background: #004d80;
+            transform: translateY(-2px);
+        }
+
+        .course-content {
+            background: white;
+            border-radius: 8px;
+            padding: 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .chapters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .chapter {
+            background: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e8e8e8;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chapter:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .chapter-thumbnail {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background: #e8e8e8;
+        }
+
+        .chapter-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .chapter:hover .chapter-thumbnail img {
+            transform: scale(1.05);
+        }
+
+        .chapter-thumbnail a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .chapter-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chapter-number {
+            color: #003366;
+            font-weight: 700;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .chapter-title {
+            color: #003366;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .chapter-link {
+            display: inline-block;
+            background: #003366;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95em;
+            transition: background 0.3s ease;
+            align-self: flex-start;
+            margin-top: auto;
+        }
+
+        .chapter-link:hover {
+            background: #004d80;
+        }
+
+        .audio-note {
+            background: #f0f4f8;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            border-left: 4px solid #003366;
+            text-align: center;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: #b3d9ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
-            .construction h1 {
-                font-size: 32px;
+            h1 {
+                font-size: 1.6em;
             }
 
-            .construction p {
-                font-size: 16px;
+            .chapters-grid {
+                grid-template-columns: 1fr;
             }
 
-            .construction-icon {
-                font-size: 60px;
+            .resources-links {
+                flex-direction: column;
             }
 
-            .course-preview {
-                padding: 20px;
+            .resource-link {
+                width: 100%;
+            }
+
+            header {
+                padding: 30px 15px;
+                margin-bottom: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="header-content">
-            <div class="logo-section">
-                <a href="https://curious2study.com" class="site-title">Curious2Study</a>
-            </div>
-            <a href="https://curious2study.com" class="back-link">← Back to Home</a>
-        </div>
+        <img src="https://curious2study.com/curious2study_small.png" alt="Curious2Study Logo">
+        <h1>Preparing for College Success</h1>
+        <p class="course-info">OpenStax Textbook with Audio Overviews</p>
     </header>
 
-    <!-- Under Construction Section -->
-    <section class="construction">
-        <div class="construction-content">
-            <div class="construction-icon">🏗️</div>
-            <h1>Preparing for College Success</h1>
-            <p>We're building something amazing. This course will launch soon with video lectures and practical strategies to prepare you for college.</p>
-            <div class="coming-soon">Coming Soon</div>
+    <div class="container">
+        <a href="https://curious2study.com" class="back-link">← Back to Home</a>
 
-            <!-- Course Preview -->
-            <div class="course-preview">
-                <h2>What to Expect</h2>
-                <p class="preview-text">Learn practical strategies for college readiness. Develop skills in time management, study habits, communication, and personal wellness to set yourself up for success.</p>
+        <div class="audio-note">
+            <strong>Audio Overviews:</strong> Each chapter includes an audio overview to help you understand key concepts and prepare for college success.
+        </div>
+
+        <div class="resources-section">
+            <h2>Resources</h2>
+            <div class="resources-links">
+                <a href="https://openstax.org/details/books/preparing-for-college-success" class="resource-link" target="_blank">OpenStax Textbook</a>
+                <a href="https://www.youtube.com/playlist?list=PLfe0kcdHBKSU" class="resource-link" target="_blank">YouTube Playlist</a>
+                <a href="https://raw.githubusercontent.com/Curious2Study/curious2study-preparing-for-college-success/main/preparing-for-college-success.pdf" class="resource-link" target="_blank">PDF Download</a>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
+        <div class="course-content">
+            <div class="chapters-grid">
+                <div class="chapter">
+                    <div class="chapter-thumbnail">
+                        <a href="https://youtu.be/rXg3L8xGRrw" target="_blank">
+                            <img src="https://img.youtube.com/vi/rXg3L8xGRrw/maxresdefault.jpg" alt="Getting into College">
+                        </a>
+                    </div>
+                    <div class="chapter-info">
+                        <div class="chapter-number">Chapter 1</div>
+                        <div class="chapter-title">Getting into College</div>
+                        <a href="https://youtu.be/rXg3L8xGRrw" class="chapter-link" target="_blank">Listen to Audio</a>
+                    </div>
+                </div>
+
+                <div class="chapter">
+                    <div class="chapter-thumbnail">
+                        <a href="https://youtu.be/xvK_E0-D73k" target="_blank">
+                            <img src="https://img.youtube.com/vi/xvK_E0-D73k/maxresdefault.jpg" alt="Transitioning to College">
+                        </a>
+                    </div>
+                    <div class="chapter-info">
+                        <div class="chapter-number">Chapter 2</div>
+                        <div class="chapter-title">Transitioning to College</div>
+                        <a href="https://youtu.be/xvK_E0-D73k" class="chapter-link" target="_blank">Listen to Audio</a>
+                    </div>
+                </div>
+
+                <div class="chapter">
+                    <div class="chapter-thumbnail">
+                        <a href="https://youtu.be/Q96LgLR_3RY" target="_blank">
+                            <img src="https://img.youtube.com/vi/Q96LgLR_3RY/maxresdefault.jpg" alt="Managing Your Time and Priorities">
+                        </a>
+                    </div>
+                    <div class="chapter-info">
+                        <div class="chapter-number">Chapter 3</div>
+                        <div class="chapter-title">Managing Your Time and Priorities</div>
+                        <a href="https://youtu.be/Q96LgLR_3RY" class="chapter-link" target="_blank">Listen to Audio</a>
+                    </div>
+                </div>
+
+                <div class="chapter">
+                    <div class="chapter-thumbnail">
+                        <a href="https://youtu.be/3oXEKGXxVRY" target="_blank">
+                            <img src="https://img.youtube.com/vi/3oXEKGXxVRY/maxresdefault.jpg" alt="Reading and Note-Taking">
+                        </a>
+                    </div>
+                    <div class="chapter-info">
+                        <div class="chapter-number">Chapter 4</div>
+                        <div class="chapter-title">Reading and Note-Taking</div>
+                        <a href="https://youtu.be/3oXEKGXxVRY" class="chapter-link" target="_blank">Listen to Audio</a>
+                    </div>
+                </div>
+
+                <div class="chapter">
+                    <div class="chapter-thumbnail">
+                        <a href="https://youtu.be/uj9HxuvA9iQ" target="_blank">
+                            <img src="https://img.youtube.com/vi/uj9HxuvA9iQ/maxresdefault.jpg" alt="Studying, Memory, and Test Taking">
+                        </a>
+                    </div>
+                    <div class="chapter-info">
+                        <div class="chapter-number">Chapter 5</div>
+                        <div class="chapter-title">Studying, Memory, and Test Taking</div>
+                        <a href="https://youtu.be/uj9HxuvA9iQ" class="chapter-link" target="_blank">Listen to Audio</a>
+                    </div>
+                </div>
+
+                <div class="chapter">
+                    <div class="chapter-thumbnail">
+                        <a href="https://youtu.be/u9wOc_TkBBk" target="_blank">
+                            <img src="https://img.youtube.com/vi/u9wOc_TkBBk/maxresdefault.jpg" alt="Building Relationships">
+                        </a>
+                    </div>
+                    <div class="chapter-info">
+                        <div class="chapter-number">Chapter 6</div>
+                        <div class="chapter-title">Building Relationships</div>
+                        <a href="https://youtu.be/u9wOc_TkBBk" class="chapter-link" target="_blank">Listen to Audio</a>
+                    </div>
+                </div>
+
+                <div class="chapter">
+                    <div class="chapter-thumbnail">
+                        <a href="https://youtu.be/CVALybCoLJk" target="_blank">
+                            <img src="https://img.youtube.com/vi/CVALybCoLJk/maxresdefault.jpg" alt="Maintaining Your Mental Health and Managing Stress">
+                        </a>
+                    </div>
+                    <div class="chapter-info">
+                        <div class="chapter-number">Chapter 7</div>
+                        <div class="chapter-title">Maintaining Your Mental Health and Managing Stress</div>
+                        <a href="https://youtu.be/CVALybCoLJk" class="chapter-link" target="_blank">Listen to Audio</a>
+                    </div>
+                </div>
+
+                <div class="chapter">
+                    <div class="chapter-thumbnail">
+                        <a href="https://youtu.be/r_6E8bpuiKM" target="_blank">
+                            <img src="https://img.youtube.com/vi/r_6E8bpuiKM/maxresdefault.jpg" alt="Understanding Financial Literacy">
+                        </a>
+                    </div>
+                    <div class="chapter-info">
+                        <div class="chapter-number">Chapter 8</div>
+                        <div class="chapter-title">Understanding Financial Literacy</div>
+                        <a href="https://youtu.be/r_6E8bpuiKM" class="chapter-link" target="_blank">Listen to Audio</a>
+                    </div>
+                </div>
+
+                <div class="chapter">
+                    <div class="chapter-thumbnail">
+                        <a href="https://youtu.be/N6QNBc3DWCQ" target="_blank">
+                            <img src="https://img.youtube.com/vi/N6QNBc3DWCQ/maxresdefault.jpg" alt="Planning Your Future">
+                        </a>
+                    </div>
+                    <div class="chapter-info">
+                        <div class="chapter-number">Chapter 9</div>
+                        <div class="chapter-title">Planning Your Future</div>
+                        <a href="https://youtu.be/N6QNBc3DWCQ" class="chapter-link" target="_blank">Listen to Audio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <div class="footer-content">
-            <p>Curious2Study - Learn How to Learn</p>
-            <p>Licensed under Creative Commons Attribution 4.0 International License (CC BY 4.0)</p>
-            <div class="footer-links">
-                <a href="https://curious2study.com">Home</a>
-                <a href="https://github.com/Curious2Study">GitHub</a>
-            </div>
-        </div>
+        <p>Curious2Study - Learn How to Study</p>
+        <p>Licensed under Creative Commons Attribution 4.0 International License (CC BY 4.0)</p>
+        <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.8;">Built with OpenStax textbooks | Powered by education</p>
     </footer>
 </body>
 </html>
